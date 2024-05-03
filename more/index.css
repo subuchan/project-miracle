@@ -1,0 +1,317 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+small{
+    font-size:25px;
+    color:#fff;
+}
+.list_const{
+    position: relative;
+}
+.hov:hover .menu_list{
+   display:block;
+   transition: all 3s ease-in-out;
+}
+.menu_list{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.567);
+    padding:5px;
+    display: none;
+}
+.menu_list li a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu_list li{
+    padding:7px 5px;
+    list-style: none;
+}
+.space{
+    letter-spacing:2px;
+}
+.WID_HEIT{
+    width:100%;
+    height:100%;
+}
+.list_syl_rmov{
+    list-style-type: none;
+    text-transform: capitalize;
+    display: inline-block;
+    padding:5px;
+    font-size:19px;
+    color: #000;
+}
+.list_syl_rmov:hover{
+   border-bottom:2px solid #3f5efb;
+}
+.container{
+    width:100%;
+    padding:0 0;
+    background:#ccc;
+}
+.a{
+    text-decoration: none;
+    color: #000;
+}
+.container .vcare{
+    background:linear-gradient(to right,#bf953f,#fcf6ba,#b38728,#fdf5b7,#aa771c);
+    /*background:linear-gradient(to top,rgba(255, 217, 0, 0.856),rgba(197, 169, 9, 0.712));*/
+}
+.container .vcare header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background:linear-gradient(to left,#3f5efbd2,#fc03cac7);*/
+    /*background:linear-gradient(to left,#ddab09,rgb(0, 0, 0));*/
+    background:linear-gradient(to right,#0e0d0de7,#fcf6ba,#b38728,#fdf5b7,#aa771c);
+    border-bottom-left-radius: 10px;border-bottom-right-radius:10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    animation: upper 2s ease-in-out;
+    position: relative;
+    padding:7px 3px;
+    opacity: .7;
+}
+@keyframes upper {
+    0%{
+        transform: translateY(-100%);
+        transition: all 2s ease-in-out;
+    }
+}
+
+.container .vcare header .logo{
+      height: 70px;
+}
+.container .vcare header .logo img{
+    height:100%;
+}
+.container .vcare header nav{
+    display:flex;
+    align-items: center;
+    width: 25%;
+}
+#icon{
+    display:none;
+    padding:5px;
+}
+.container_1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    height:73vh;
+    text-align: center;
+    color:#fff;
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.616),rgba(0, 0, 0, 0.582)) ,url(header_aesthetic.jpg) no-repeat;
+}
+span{
+    color:gold;
+    font-size: 20px;
+    font-stretch:20px;
+}
+.content_of{
+    animation: transform 2s ease-in-out;
+}
+@keyframes transform {
+    0%{
+        transform: translateX(-140%);
+    }
+    100%{
+        transform:translateZ(100%);
+    }
+}
+.container_1 .content_of h4,.title{
+    color: #fff;
+    padding: 5px;
+    font-size:19px;
+}
+.container_2{
+    padding:7% 4px;
+}
+.container_2 .doc_ph{
+    width: 70%;
+    margin:1px auto;
+    display:flex;
+    align-items: center;
+    padding:20px 5px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+     rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+     border-radius: 10px;
+     background: rgba(255, 255, 255, 0.87);
+     text-align: justify;
+}
+.container_2 h1{
+    text-align: center ;
+}
+.container_2 .title1{
+    word-spacing:5px;
+    padding:10px 20px 0 0;
+    line-height:1.4;
+    font-size: 16px;
+    opacity:.7;
+
+}
+.container_3 .pop{
+   padding:10px 55px;
+   text-align: justify;font-size: 18px;line-height:1.4;opacity:.7;
+}
+.container_3 .titles{
+    text-align: center;
+    padding:6px;color: #a83232;
+}
+.old_web a{
+   text-decoration-line: none;
+   font-size: 22px;
+   color: #fff;
+   text-transform:capitalize;
+}
+.container_4{
+    padding: 7% 25px 30px 25px;
+    display:flex;
+    justify-content: space-between;
+}
+.container_4 .left{
+   width:40%;
+   
+}
+.container_4 .left{
+    width:50%;
+ }
+.container_4 .right ul li{
+    padding:5px;
+}
+ .list{
+     font-size:25px;color:#a83232;padding: 6px;
+
+ }
+.footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+    background:linear-gradient(to left,rgba(0, 0, 0, 0.603),rgb(0, 0, 0));
+    color: #fff;
+}
+.footer i{
+    font-size: 20px;
+    padding: 5px;
+}
+.footer .left_site{
+    height:80px;
+}
+.phone{
+    display:flex;
+}
+.phone p{
+    padding: 3px 6px;
+    color:#000;
+    font-size:16px;
+    
+}
+.phone p>i{
+    color:#072ffa;
+    font-size:22px;
+}
+@media screen and (max-width:1070px){
+    /*
+    #icon:hover .container .vcare header nav ul{
+        display:block;
+        color:green;
+    }*/
+/*
+    .container .vcare header nav ul{
+        right:75px;
+        top:82px;
+        padding:4px;
+        position: absolute;
+        width:37%;
+        background: rgba(0, 0, 0, 0.445);
+        border-radius:10px;
+        display:none;
+
+    }
+    #icon:hover .container .vcare header nav ul{
+        display:block;
+        color:green;
+    }
+    .container .vcare header nav ul li{
+        padding: 16px 6px;
+        text-align: center;
+        font-size: 13px;
+    }
+    .list_syl_rmov{
+        display:block;
+    }
+    .list_syl_rmov:hover{
+       border-bottom:none;
+}*/
+}
+@media screen and (max-width:850px){
+    .container .vcare header nav{
+        width:75%;
+    }
+    .container .vcare header nav ul li{
+        font-size: 15px;
+    }
+    .container .miracle header nav{
+        width:74%;
+    }
+    .container_2 .doc_ph{
+        width:90%;
+        flex-direction: column;
+        padding:10px 5px;
+    }
+    .container_2 .right .title1{
+        font-size:15px;
+    }
+}
+@media screen and (max-width:1115px){
+    .list_syl_rmov{
+        font-size: 15px;
+    }
+    .container_4{
+        width:100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .container_4 .left{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        
+     }
+     .container_4 .right{
+        width:100%;
+        text-align: center;
+     }
+     .container_4 .right ul li{
+        list-style-type: none;
+     }
+     .phone{
+         flex-direction: column;
+     }
+}
+@media screen and (max-width:650px){
+    .footer{
+        flex-direction: column;
+    }
+    .footer .left_site{
+        padding:7px;
+    }
+    .footer .old_web{
+        padding:10px;
+    }
+    .list_syl_rmov{
+        font-size:15px;
+    }
+    .phone p{
+        font-size: 10px;
+    }
+    .container .vcare header .logo{
+        height: 40px;
+  }
+
+}

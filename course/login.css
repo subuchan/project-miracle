@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&family=Poppins:wght@300&family=Roboto&family=Sevillana&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'lora';
+}
+h2{
+  text-shadow:0 8px 32px rgba(0, 0, 0, 0.757);
+
+}
+.container{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    background: linear-gradient(to right,#aa771c,#fcf6ba,#b38728,#fdf5b7,#aa771c);
+    align-items: center;
+}
+form{
+    width: 20rem;
+    padding:10px 5px;
+    box-shadow:0 8px 32px rgba(0, 0, 0, 0.757);
+    display: flex;
+    flex-direction: column;
+    background:#fff;
+    border-radius:8px;
+    position: relative;
+    border-top: 1px solid rgba(0, 0, 0, 0.335);
+    border-right: 1px solid rgba(0, 0, 0, 0.5); 
+    animation: trans 2s ease-in-out;
+}
+@keyframes tran {
+    0%{
+        transform: translateY(-150%);
+        transition: all 2s ease-in-out;
+    }
+}
+.miracle{
+    position:fixed;
+    left: 45%;
+    top:20%;
+    /*color:#fff;*/
+    display:none;
+}
+form::before{
+    content: "";
+    height:120px;
+    width:120px;
+    background:linear-gradient(to right,rgba(255, 255, 255, 0.911),rgba(255, 255, 255, 0.671));
+    position:absolute;
+    border-radius: 50%;
+    top: -60px;
+    left:-70px;
+    z-index:1;
+}
+form::after{
+    content: "";
+    height:80px;
+    width:80px;
+    background:linear-gradient(to right,rgba(255, 255, 255, 0.596),rgba(255, 255, 255, 0.493));
+    position:absolute;
+    border-radius: 50%;
+    bottom:-35px;
+    right: -30px;
+    z-index:1;
+}
+input[type='text'],input[type='email'],input[type='password'] {
+    width:80%;
+    margin: 3% auto;
+    height:25px;
+    background:transparent;
+    border:none;
+    outline: none;
+    color:#aa771c;
+    border-bottom: 1px solid #000;
+    font-size:15px;
+}
+input[type='submit']{
+    margin-bottom: 2%;
+    padding:10px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    width:50%;
+    margin:2% auto;
+    font-size: 18px;
+    /* color: #fff; */
+    background:transparent;
+    border:none;
+    outline: none;
+    border: 1px solid #fc466ac4;
+}
+label{
+    text-transform: capitalize;
+    /* color: #fff; */
+    margin-left:11%;
+    padding: 10px 0;
+}
+h3{
+    padding:5px;
+    text-align: center;
+    /* color: #fff; */
+}

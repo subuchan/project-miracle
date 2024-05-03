@@ -1,0 +1,368 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+  text-decoration:none;
+  color:#fff;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #1e90ff;
+  padding: 0 5px;
+  /*background-color: #1e90ff;*/
+  background:linear-gradient(to right,rgba(0, 0, 0, 0.774),#1e90ff);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+header ul{
+  display: flex;
+  justify-content: space-between;
+}
+header ul li{
+   list-style: none;
+   font-size: 18px;
+   text-transform: capitalize;
+   border-right: 2px solid var(--gold);
+   padding: 0 6px;
+}
+header .right-minu{
+  width: 50%;
+}
+
+.icon_hide{
+  display: none;
+ 
+}
+span{
+  font-size: 2rem;
+  color: #ffa600;
+}
+#span{
+  color: #ffa600;
+}
+.sub_title{
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  line-height: 27px;
+  word-spacing: 2px;
+  text-align-last: center;
+}
+
+.text{
+  text-align: center;
+  color: #ffa600;
+  font-size:25px;
+  padding:4px;
+  text-transform: capitalize;
+}
+.title{
+  font-size: 2rem;
+}
+:root{
+   --primary:#1e90ff;
+   --danger:#fc466b;
+}
+.top_content{
+  width: 100%;
+  height: 86vh;
+  background: linear-gradient(to right,rgba(0, 0, 0, 0.429),rgba(0, 0, 0, 0.814)), url("MIRACLE/slimmg/slim-8.jpeg") no-repeat ;
+  background-size: cover;
+}
+.top_content .registrat{
+  color: #ffff;
+  background: transparent;
+  border:1px solid red;
+}
+.logo{
+ width: 140px;
+ height: 90px;
+}
+.paavai_img{
+  display: flex;
+  align-items: center;
+}
+.img{
+ width: 100%;
+ height: 100%;
+ object-fit: contain;
+}
+abbr{
+  text-decoration:none;
+}
+.student_login{
+  height: 78vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.login_form{
+  width: 50%;
+  overflow: hidden;
+}
+.login_form form{
+  width: 50%;
+  margin: 1px auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 1.6% 0;
+  animation: transform 1.5s ease-in-out;
+}
+@keyframes transform {
+  0%{
+     transform: translateX(-100%);
+  }
+}
+.login_form label{
+  text-transform: capitalize;
+  color: #fff;
+  margin-left: 11%;
+  margin-top: 2%;
+  font-size: 18px;
+}
+.login_form form  input{
+  width: 80%;
+  margin: 3% auto;
+  border: none;
+  outline: none;
+  background:transparent;
+  border-bottom: 2px solid black;
+  color: #fff;
+  font-size: 16px;
+}
+.btn{
+  width: 50%;
+  margin: 1% auto;
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  cursor:pointer;
+}
+.btn:hover{
+  background:#1e90ff;
+  color: #fff;
+}
+.banner{
+ width: 50%;
+ color: #fff;
+ padding: 1% 5px;
+}
+.img1{
+  width: 100%;
+  height: 100%;
+  object-fit:cover;
+  transition: transform 1.6s ease-in-out;
+}
+.bot_bot{
+  border-bottom-left-radius:20%;
+}
+#center{
+  padding:6px;
+}
+.speceal{
+  background:#30393a;
+  padding: 0 5%;padding: 35px 0;
+}
+.camb_banner{
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+}
+.camb_banner .poly_camb{
+  width:31%;
+  height: 250px;
+  overflow: hidden;
+  padding: 5px;
+  position: relative;
+}
+
+.camb_banner .poly_camb img:hover{
+  transform: scale(1.7);
+}
+.students_manege{
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.students_manege .our_content{
+  width: 50%;
+}
+.students_manege .student_img_banner{
+  width: 48%;
+}
+.student_img_banner.student_img_banner .poly_student{
+  width: 50%;
+}
+.share_link{
+  padding: 1% 10%;
+  display: flex;
+  justify-content: space-between;
+  background:#30393a;
+}
+.open_college{
+  color: #fff;
+  opacity: .4;
+}
+.footer_icon i{
+  font-size: 30px;
+  color: #fff;
+}
+#subt{
+  text-align: justify;
+}
+@media (max-width:850px) {
+  .icon_hide{
+     display: block;
+   }
+   header{
+     padding:0;
+     position: relative;
+   }
+   header .minu_list{
+     display: none;
+   }
+   
+ .minu_list{
+  display: flex;
+}
+header .right-minu{
+  width:7%;
+}
+   header ul{
+     text-align: center;
+     padding:5px;
+     width: 100%;
+     position: absolute;
+     flex-direction: column;
+     background: rgba(0, 0, 0, 0.542);
+     height: 50vh;
+     top: 100%;
+     left: 0;
+   }
+  .top_content{
+     height: 89vh;
+  }
+  .paavai_img{
+     justify-content: center;
+  }
+  .spsu{
+     font-size:14px;
+  }
+  .student_login{
+     flex-direction: column;
+  }
+  .banner{
+     width: 100%;
+  }
+  .login_form{
+     width: 100%;
+  }
+  .login_form form{
+     padding: 0;
+     width:100%;
+  }
+  .login_form form  input{
+     margin: 1.4% auto;
+  }
+  .speceal{
+     padding: 0;
+  }
+  .camb_banner{
+     flex-direction: column;
+     align-items: center;
+  }
+  .camb_banner .poly_camb{
+     width:50%;
+     padding: 5px;
+  }
+  .students_manege{
+     flex-direction: column;
+     padding: 0;
+  }
+  .students_manege .our_content{
+     width: 100%;
+  }
+  .students_manege .student_img_banner{
+     width: 50%;
+     margin: 1px auto;
+  }
+  .text{
+     font-size:1rem;
+     padding: 0;
+  }
+  .sub_title{
+     font-size:small;
+  }
+  span{
+     font-size: 1rem;
+  }
+}
+@media (max-width:358px) {
+  .paavai_img{
+     justify-content: center;
+  }
+  .student_login{
+     flex-direction: column;
+  }
+  .banner{
+     width: 100%;
+  }
+  .login_form{
+     width: 100%;
+  }
+  .speceal{
+     padding: 0;
+  }
+  .camb_banner{
+     flex-direction: column;
+     align-items: center;
+  }
+  .camb_banner .poly_camb{
+     width:100%;
+     padding: 5px;
+  }
+  .students_manege{
+     flex-direction: column;
+     padding: 0;
+  }
+  .students_manege .our_content{
+     width: 100%;
+  }
+  .students_manege .student_img_banner{
+     width: 90%;
+
+     margin: 2% auto;
+  }
+  .sub_title{
+     text-transform: capitalize;
+     font-size:15px;
+     line-height: 22px;
+     word-spacing: 2px;
+      padding: 0 7px;
+  }
+  .share_link{
+     padding: 6px;
+     flex-direction: column;
+   }
+   
+   .footer_icon i{
+     font-size:15px;
+     padding-top: 6px;
+ }
+ .open_college > p{
+    font-size:15px;
+ }
+
+}
